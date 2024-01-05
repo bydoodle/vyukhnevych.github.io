@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #4F709C;
+    background: url(../images/seamlessbackgroundDark.png);
 }
 
 .header_container > div > a {
@@ -49,51 +49,68 @@ main {
     color:#F0F0F0;
     font-family: 'Upheaval TT (BRK)', sans-serif;
     font-size: 2em;
+    position: fixed;
+    width: 100%;
 }
 
 header {
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 2000;
+    background: #fff;
+    height: 81px;
+    filter: drop-shadow(0 0 0.5rem black);
 }
 
 .main_slider_container {
-    margin-top: 81px;
     background-image: url(../images/background.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.main_slider_container:after {
+    padding-top: 36.45%;
+    display: block;
+    content: '';
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: flex;
-    height: 700px;
     justify-content: center;
     align-items: center;
 }
 
 h2 {
-    color: black;
+    margin: 0;
+    width: 70%;
     font-family: 'Upheaval TT (BRK)', sans-serif;
-    font-size: 6em;
-    width: 1000px;
-    left: 100px;
+    font-size: 8em;
     text-align: center;
     color: #f0f0f0;
     filter: drop-shadow(0 0 1rem black);
-    margin-bottom: 150px;
     cursor: default;
 }
 
 .categories_container {
     width: 100%;
-    background-color: #E5D283;
     display: flex;
     justify-content: center;
 }
 
 .categories_main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-self: center;
-    width: 70%;
+    width: 90%;
     padding: 90px 0;
 }
 
@@ -113,6 +130,10 @@ h2 {
     background-size: cover;
     background-position: center;
     filter: drop-shadow(0 0 0.5rem black);
+}
+
+.category > h3 {
+    filter: drop-shadow(0 0 0.5rem black);;
 }
 
 #twod--design {
@@ -168,8 +189,7 @@ footer {
 
 .twod_description {
     height: 400px;
-    background-color: #E5D283;
-    padding-top: 81px;
+    background: url(../images/seamless2.png);
     display: flex;
     align-items: center;
     text-align: center;
@@ -180,17 +200,19 @@ footer {
 
 .twod_description > span {
     width: 70%;
+    filter: drop-shadow(0 0 1rem white);
 }
 
 .twod_container {
-    background-color: #4F709C;
+    background: url(../images/seamlessbackgroundDark.png);
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-row-gap: 100px;
-    justify-content: space-between;
-    width: 75%;
+    justify-content: space-around;
+    width: 100%;
     align-self: center;
     padding: 90px 0;
+    filter: drop-shadow(0 0 0.5rem black);
 }
 
 .twod_item {
@@ -215,10 +237,13 @@ footer {
 /* MUSIC */
 
 .musiclist {
+    background: url(../images/seamlessbackgroundDark.png);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0;
+    padding: 50px 0;
+    filter: drop-shadow(0 0 0.5rem black);
+    width: 100%;
 }
 
 .musiclist_item {
@@ -226,6 +251,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 25px 0;
+    filter: drop-shadow(0 0 0.5rem black);
 }
 
 .musiclist_item > span {
@@ -274,13 +300,14 @@ audio {
     max-width: 90%;
     margin: 45px 0;
     max-height: 850px;
+    filter: drop-shadow(0 0 0.5rem black);
 }
 
 .item_showcase_description {
     position: fixed;
     right: 0;
-    top: 81px;
-    background-color: #E5D283;
+    top: 0;
+    background: url(../images/seamless2.png);
     height: 100vh;
     max-width: 35%;
     display: flex;
@@ -293,4 +320,8 @@ audio {
 
 .item_showcase_description > span {
     width: 85%;
+    color: white;
+    background-color: black;
+    padding: 15px 30px;
+    filter: drop-shadow(0 0 0.5rem white);
 }
