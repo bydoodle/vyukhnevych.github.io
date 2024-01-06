@@ -295,7 +295,7 @@ audio {
     justify-content: space-evenly;
 }
 
-.item_showcase_images > img {
+.item_showcase_images > img, video {
     object-fit: contain;
     max-width: 90%;
     margin: 45px 0;
