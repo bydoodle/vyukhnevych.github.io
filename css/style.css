@@ -359,8 +359,7 @@ audio {
 }
 
 .item_showcase_description_mobile {
-    visibility: hidden;
-    position: absolute;
+    display: none;
 }
 
 @media screen and (max-width: 1500px) {
@@ -379,13 +378,11 @@ audio {
     }
 
     .item_showcase_description {
-        visibility: hidden;
-        position: absolute;
+        display: none;
     }
 
     .item_showcase_description_mobile {
-        visibility: visible;
-        position: relative;
+        display: block;
         color: white;
         height: 400px;
         font-family: 'Montserrat', sans-serif;
@@ -434,6 +431,10 @@ audio {
     .category > h3 {
         font-size: 3em;
     }
+
+    .header_container {
+        font-size: 1.8em;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -470,8 +471,11 @@ audio {
     }
 
     .footer_item > a:nth-child(even) {
-        visibility: hidden;
-        position: absolute;
+        display: none;
+    }
+
+    .header_container {
+        font-size: 1.6em;
     }
 }
 
@@ -520,6 +524,6 @@ audio {
     }
 
     .item_showcase_description_mobile > span {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
